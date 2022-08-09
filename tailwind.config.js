@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: [require("tailwind-scrollbar")],
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class",
   theme: {

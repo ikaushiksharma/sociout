@@ -6,6 +6,7 @@ import { ThemeProvider } from "./utils/themeContext";
 import Background from "./utils/background";
 import Toggle from "./utils/themeToggle";
 import "./index.css";
+
 ReactDOM.render(
   <Router>
     <ThemeProvider>

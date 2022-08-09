@@ -3,13 +3,14 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { gapi } from "gapi-script";
 import Login from "./Components/Login";
 import Home from "./Container/Home";
+
 const App = () => {
   const navigate = useNavigate();
 
   gapi.load("client:auth2", () => {
     gapi.client.init({
-      clientId: process.env.CLIENT_ID,
-      scope: process.env.SCOPE,
+      clientId: process.env.REACT_APP_CLIENT_ID,
+      scope: process.env.REACT_APP_SCOPE,
     });
   });
   useEffect(() => {
