@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { gapi } from "gapi-script";
 import Login from "./Components/Login";
 import Home from "./Container/Home";
-
+import About from "./Container/About";
 const App = () => {
   const navigate = useNavigate();
 
@@ -25,6 +25,7 @@ const App = () => {
     <Routes>
       <Route path="login" element={<Login />} />
       <Route path="/*" element={<Home />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   );
 };
