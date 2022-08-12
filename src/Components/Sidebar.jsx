@@ -16,7 +16,7 @@ const Sidebar = ({ closeToggle, user }) => {
     <div className="flex flex-col shadow-lg dark:shadow-md rounded dark:shadow-gray-300 justify-between h-full overflow-y-scroll dark:bg-gray-800 dark:text-white bg-white min-w-210 hide-scrollbar">
       <div className="flex flex-col">
         <Link
-          to="/"
+          to="/about"
           className="flex items-center gap-2 px-5 pt-1 my-6 w-190"
           onClick={handleCloseSidebar}
         >

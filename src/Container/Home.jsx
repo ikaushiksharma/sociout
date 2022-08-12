@@ -31,13 +31,13 @@ const Home = () => {
         <Sidebar />
       </div>
       <div className="flex flex-row md:hidden">
-        <div className="flex flex-row items-center justify-between w-full p-2 pr-10 shadow-md">
+        <div className="flex flex-row items-center dark:text-white justify-between w-full p-2 pr-10 shadow-md">
           <HiMenu
             fontSize={40}
             className="cursor-pointer"
             onClick={() => setToggleSidebar(true)}
           />
-          <Link to="/">
+          <Link to="/about">
             <img src={logo} alt="logo" className="w-28" />
           </Link>
           <Link to={`user-profile/${user?._id}`}>

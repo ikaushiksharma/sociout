@@ -7,7 +7,7 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
     return (
       <div className="flex dark:bg-gray-700 w-full gap-2 mt-5 md:gap:5 pb-7">
         <div className="flex items-center justify-start w-full px-2 dark:bg-slate-500 bg-white border-none rounded-md outline-none focus-within:shadow-sm">
-          <IoMdSearch fontSize={21} className="ml-1" />
+          <IoMdSearch fontSize={21} className="dark:text-slate-200 ml-1" />
           <input
             type="text"
             onChange={(e) => setSearchTerm(e.target.value)}
