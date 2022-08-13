@@ -7,6 +7,7 @@ import { client } from "../client";
 import Pins from "./Pins";
 import { userQuery } from "../utils/data";
 import logo from "../assets/logo.png";
+
 const Home = () => {
   const scrollRef = useRef(null);
   const [toggleSidebar, setToggleSidebar] = useState(false);

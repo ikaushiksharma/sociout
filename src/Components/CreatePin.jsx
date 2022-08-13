@@ -48,7 +48,13 @@ const CreatePin = ({ user }) => {
     }
   };
   const savePin = () => {
-    if (title && about && destination && imageAsset?._id && category) {
+    if (
+      title &&
+      (about || "kush bhi") &&
+      (destination || "not added anything") &&
+      imageAsset?._id &&
+      category
+    ) {
       const doc = {
         _type: "pin",
         title,
@@ -156,6 +162,7 @@ const CreatePin = ({ user }) => {
           <input
             type="text"
             value={about}
+            defaultValue="About the image"
             onChange={(e) => setAbout(e.target.value)}
             placeholder="Tell everyone what your Pin is about"
             className="p-2 text-base border-b-2 dark:bg-slate-500 dark:text-gray-200 border-gray-200 outline-none sm:text-lg"
@@ -163,6 +170,7 @@ const CreatePin = ({ user }) => {
           <input
             type="url"
             vlaue={destination}
+            defaultValue="https://sociout.vercel.app"
             onChange={(e) => setDestination(e.target.value)}
             placeholder="Add a destination link"
             className="p-2 text-base border-b-2 dark:bg-slate-500 dark:text-gray-200 border-gray-200 outline-none sm:text-lg"
@@ -179,7 +187,10 @@ const CreatePin = ({ user }) => {
                 }}
                 className="w-4/5 p-2 text-base border-b-2 dark:border-b-0 dark:shadow dark:shadow-gray-400 dark:bg-slate-600 dark:text-gray-200 border-gray-200 rounded-md outline-none cursor-pointer"
               >
-                <option value="others" className="bg-white dark:bg-slate-500 dark:text-gray-200 sm:text-bg">
+                <option
+                  value="others"
+                  className="bg-white dark:bg-slate-500 dark:text-gray-200 sm:text-bg"
+                >
                   Select Category
                 </option>
                 {categories.map((item) => (
