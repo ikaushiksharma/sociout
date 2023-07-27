@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Sociout
+
+![image](https://github.com/ikaushiksharma/sociout/assets/90143986/7045cc7f-3327-4ae9-bc76-d676deeea839)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
